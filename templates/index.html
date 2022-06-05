@@ -1,0 +1,28 @@
+{% extends "layout_out.html" %}
+{% block content %}
+    <section class="welcome">
+        <div>
+            <img class="icon_img" src="../static/img/icon.png" alt="treem icon">
+        </div>
+        <div class="catchphrase">
+            <h2>Заботиться о природе. Просто.</h2>
+        </div>
+        <form id="loggining" method="POST" action="http://localhost:8000/get_session_token/">
+            <fieldset>
+                <div>
+                    <input class = "treemlogin field" type="text" id="trlogin" placeholder="Логин" required><br>
+                </div>
+                <div>
+                    <input class = "treempassword field" type="password" id="trpassword" placeholder="Пароль" required><br>   
+                </div>
+                <div class="bline1">
+                    <a href="{{ url_for('registration') }}" class="button btn btn-succes" type="submit" id="sign_up">Регистрация</a> 
+                    <input class="button btn btn-succes" type="submit" id="log_in" value="Вход">
+                </div>
+                <div class="bline2">    
+                    <input class="button btn btn-secondary" type="submit" id="get_info" name="get_info" value="Узнать больше о сервисе">
+                </div>
+            </fieldset>
+        </form>
+    </section>
+{% endblock content %}

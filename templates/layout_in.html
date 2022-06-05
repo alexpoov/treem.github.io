@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">     
+    
+        <meta name="description" content="Save trees, recive gifts!">
+        <link rel="stylesheet" href="../static/personal.css">
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha256-/ykJw/wDxMa0AQhHDYfuMEwVb4JHMx9h4jD4XvHqVzU=" crossorigin="anonymous" /> -->
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../static/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../static/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../static/favicons/favicon-16x16.png">
+        <link rel="manifest" href="../static/favicons/site.webmanifest">
+        <link rel="mask-icon" href="../static/favicons/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="../static/favicons/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-config" content="../static/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+
+        <!-- {% if title %}
+            <title>treem Service - {{ title }}</title>
+        {% else %}
+            <title>treem Service</title>
+        {% endif %}    -->
+
+    </head>
+
+    <body>
+        <main>
+            <!-- {% block person %}{% endblock %} -->
+            <section class="persona">
+                <div class="shapka">
+                    <img class="profile_pic" src="../static/img/profile.jpg" alt="SanSanych profile pic">
+                    <h2 class="name">San Sanych</h2>    
+                </div>
+                <a href="{{ url_for('hello') }}"><img class="quit" src="../static/img/quit_icon.png"></a>
+            </section>
+            <section class="balance">
+                <h2 class="cred_string">Экопоинтов: 20 штук.</h2>
+                <a href=""><img class="how_to" src="../static/img/question_icon.png"></a>
+            </section>
+            <section class="controls">
+                <a href="" class="button get_info">Узнать больше <br> об экологии</a>
+                <a href="" class="button submit tree">Новая заявка <br> на дерево</a>
+            </section>
+            <div class="tabs">
+                <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
+                <label for="tab-btn-1">Новые заявки</label>
+                <input type="radio" name="tab-btn" id="tab-btn-2" value="">
+                <label for="tab-btn-2">Рассмотренные</label>
+                <div id="content-1">
+                    Содержимое 1...
+                </div>
+                <div id="content-2">
+                    Содержимое 2...
+                </div>
+            </div>
+        </main>
+
+        <script src="/frontend/main.js"></script>
+
+    </body>
+</html>
