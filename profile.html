@@ -57,7 +57,9 @@
                             </ol>
                             Готово! Ваша заявка будет рассмотрена нашими модераторами. В случае успеха, совсем скоровы полчите свои первые экопоинты.                          
                          </p>
-                         <img class="howtomain" src="img/howtomain.jpg">
+                         <div>
+                             <img class="howtomain" src="img/howtomain.jpg">
+                         </div>
                         </div>
                     </div>             
                 </div>
@@ -82,6 +84,31 @@
                 </div>
 
                 <button id="submit_tree" class="button submit tree">Новая заявка <br> на дерево</button>
+                
+                <!-- The Modal -->
+                <div id="treesubmitform" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                    <span class="close close3">&times;</span>
+                    <form class="formingTree">
+                        <label for="PhotoBefore">Пожалуйста, загрузите фото до посадки саженца:</label> <br> <br>
+                        <input type="file" id="PhotoBefore" name="PhotoBefore"> <br> <br>
+                        <label for="PhotoAfter">Теперь после его посадки:</label> <br> <br>
+                        <input type="file" id="PhotoAfter" name="PhotoAfter"> <br> <br>
+                        <label for="species">Выберите вид посаженного дерева:</label> <br> <br>
+                        <select id="species" name="species"> 
+                            <option value="tree1">Берёза</option> 
+                            <option value="tree2">Пихта</option> 
+                            <option value="tree3">Дуб</option>
+                            <option value="tree4">Сосна</option>
+                          </select> <br> <br>
+                        
+                        <button id="send_tree_submission" class="button submit tree">Отправить заявку<br> на дерево</button>
+
+                      </form>
+                    </div>
+                
+                </div>
 
             </section>
             <div class="tabs">
@@ -90,10 +117,10 @@
                 <input type="radio" name="tab-btn" id="tab-btn-2" value="">
                 <label for="tab-btn-2">Рассмотренные</label>
                 <div id="content-1">
-                    Содержимое 1...
+                    У вас пока нет нерассмотренных заявок... Самое время создать новую!
                 </div>
                 <div id="content-2">
-                    Содержимое 2...
+                    У вас пока нет рассмотренных заявок...
                 </div>
             </div>
             <div class="tests">

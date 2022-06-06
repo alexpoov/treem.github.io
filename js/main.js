@@ -1,3 +1,23 @@
+// modal popups - ecoInfo
+
+var modal = document.getElementById("ecoInfo");
+var btn = document.getElementById("get_info");
+var span = document.getElementsByClassName("close1")[0];
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
 // confirm password
 const reg_form = document.getElementById("register_form");
 

@@ -37,3 +37,23 @@ window.onclick = function(event) {
     modal2.style.display = "none";
   }
 }
+
+// modal popups - submitTree
+
+var modal3 = document.getElementById("treesubmitform");
+var btn3 = document.getElementById("submit_tree");
+var span3 = document.getElementsByClassName("close3")[0];
+
+btn3.onclick = function() {
+    modal3.style.display = "block";
+}
+
+span3.onclick = function() {
+    modal3.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal2) {
+    modal3.style.display = "none";
+  }
+}

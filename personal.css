@@ -42,10 +42,10 @@ html, body{
  }
 
  .button{
-    display: flex;
-    justify-content: center;
-    align-items: center;   
-    background-color: rgb(0,132,61);
+     display: flex;
+     justify-content: center;
+     align-items: center;   
+     background-color: rgb(0,132,61);
      color: white;
      width: 49%;
      height: 4em;
@@ -81,6 +81,9 @@ html, body{
 /* Modal Content */
 .modal-content {
   position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   left: 5%;
   bottom: 0;
   background-color: #fefefe;
@@ -146,6 +149,17 @@ html, body{
 .ecoInfoimg{
   object-fit: fill;
   left: 5%
+}
+
+.howtomain{
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.formingTree{
+  margin: 20px;
 }
 
 
