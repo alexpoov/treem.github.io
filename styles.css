@@ -10,7 +10,7 @@ html, body{
     font-family: 'Raleway', sans-serif;
     display: flex;
     justify-content: center;
-    background: url(img/login-back.jpg) no-repeat center center fixed;
+    background: url(https://raw.githubusercontent.com/alexpoov/treem_pages/main/img/login-back.jpg) no-repeat center center fixed;
     background-size: auto 100%;
 }
 
