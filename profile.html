@@ -38,11 +38,51 @@
             </section>
             <section class="balance">
                 <h2 class="cred_string">Экопоинтов: 20 штук.</h2>
-                <a href=""><img class="how_to" src="img/question_icon.png"></a>
+                
+                <img id="how_to" class="how_to" src="img/question_icon.png">
+                <div id="how_to_main" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <span class="close close2">&times;</span>
+                        <h2>Что такое экопоинты и как их получить?</h2>
+                        </div>
+                        <div class="modal-body">
+                         <p> <b>Экопоинты</b> - отметка вашего экологического следва, вашего вклада в заботу о природе и помощи в озеленении. Накопив достаточное количество экпоинтов, вы сможете обменять их на скидки и подарки от партнёров нашего сервиса, таким образом монетизировав свою заботу о природе. 
+                             <br> 
+                             <ol>
+                                <li>Сфотографируйте место <b>до</b> и <b>после</b> высадки вашего саженца</li>
+                                <li>Зайдите на страницу вашего профиля и нажмите на кнопку "Новая заявка"</li>
+                                <li>Загрузите обе фотографии и укажите вид дерева, который вы посадили. При желании можно добавить геометку</li> 
+                            </ol>
+                            Готово! Ваша заявка будет рассмотрена нашими модераторами. В случае успеха, совсем скоровы полчите свои первые экопоинты.                          
+                         </p>
+                         <img class="howtomain" src="img/howtomain.jpg">
+                        </div>
+                    </div>             
+                </div>
             </section>
             <section class="controls">
-                <a href="" class="button get_info">Узнать больше <br> об экологии</a>
-                <a href="" class="button submit tree">Новая заявка <br> на дерево</a>
+                <button id="btn_ecoInfo" class="button get_info">Узнать больше <br> об экологии</button>
+                <!-- The Modal -->
+                <div id="ecoInfo" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <span class="close close1">&times;</span>
+                        <h2>Заботимся о природе - вместе, с выгодой</h2>
+                        </div>
+                        <div class="modal-body">
+                         <p>По прогнозам экологов, уже через 300 лет нашу планету <a href="https://wwf.ru/resources/news/lesa/obezleseniye/">ждёт полное обезлесение</a>. Помимо утраты важнейшего элемента природного мира, такая проблема рискует также повлиять на климат, количество стихийных бедствий, качество жизней самих людей. 
+                             <br> <br> Мы в <b>Treem</b> хотим помось нашей любимой планете, и для этого нам нужна ваша помощь! Сажайте деревья, отправляйте нам их фотографии, а мы наградим вас ценными призами :-)
+                         </p>
+                         <img class="ecoInfoimg" src="img/ecoInfoimg.jpg">
+                        </div>
+                    </div>             
+                </div>
+
+                <button id="submit_tree" class="button submit tree">Новая заявка <br> на дерево</button>
+
             </section>
             <div class="tabs">
                 <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
@@ -56,9 +96,11 @@
                     Содержимое 2...
                 </div>
             </div>
+            <div class="tests">
+            </div>
         </main>
 
-        <script src="js/main.js"></script>
+        <script src="js/popups.js"></script>
 
     </body>
 </html>

@@ -57,3 +57,11 @@ reg_form.addEventListener('submit', async (e) => {
 // })
 
 
+
+
+// // swipe things
+//   // import Swiper JS
+//   import Swiper from 'swiper';
+//   // import Swiper styles
+//   import 'swiper/css';
+
